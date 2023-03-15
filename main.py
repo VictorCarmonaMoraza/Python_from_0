@@ -1,3 +1,10 @@
+#Declarar variables en python
+#No hace falta declarar el tipo de la variable
+miVariable = "Hola Mundo desde Python"
 
-#Enviar un saludo a la consola utilizando python
-print("este es mi saludo desde python")
+print(miVariable)
+print(miVariable)
+print(miVariable)
+
+miVariable =10
+print(miVariable)
