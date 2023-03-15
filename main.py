@@ -1,10 +1,7 @@
-#Declarar variables en python
-#No hace falta declarar el tipo de la variable
-miVariable = "Hola Mundo desde Python"
+x =10
+y=2
+z =x + y
 
-print(miVariable)
-print(miVariable)
-print(miVariable)
-
-miVariable =10
-print(miVariable)
+print(x)
+print(y)
+print(z)
