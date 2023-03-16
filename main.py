@@ -3,12 +3,12 @@
 resultado: int = 0
 
 
-def sumarArgumentos(*valores) -> int:
-    resultado = 0
+def  multiplicarArgumentos(*valores) -> int:
+    resultado = 1
     for valor in valores:
-        resultado += valor
+        resultado *= valor
     return resultado
 
 
-# sumarArgumentos(1, 2, 3, 4, 5, 6, 7)
-print(sumarArgumentos(1, 2, 3, 4, 5, 6, 7))
+
+print(multiplicarArgumentos(1, 2, 3, 4, 5, 6, 7))
