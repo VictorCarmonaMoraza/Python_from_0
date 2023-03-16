@@ -1,3 +1,5 @@
-# Califica tu dia
-valorDia = int(input("Como estuvo tu dia del 1 al 10"))
-print("Mi dia fue como un: ", valorDia)
+
+titulo = input("Proporcionar el titulo del libro:")
+autor = input("Proporcionar el autor del libro:")
+print(titulo," fue escrito por ",autor)
+
