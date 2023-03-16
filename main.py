@@ -1,8 +1,9 @@
-#la flecha indica el tipo que va a devolver
-def sumar(a:int=0, b:int=3) ->int:
-    return a+b
+#No sabemos la cantidad de parametros que vamos a recibir
+def listarNombre(*nombres):
+    for nombre in nombres:
+        print((nombre))
 
 
-resultado = sumar()
-print(resultado)
-print(f'Resultado sumar: {sumar(2,8)}')
+#Es una tupla y recordar que las tuplas son inmutables por lo que no se pueden modifcar
+
+listarNombre('juan','Pedro','Lucia','Jorge','Mario')
