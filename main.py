@@ -1,11 +1,5 @@
-# Tipos bool (boolean)
-miVariable = False
-print(miVariable)
+# Funcion input para procesar la entrada del usuario
 
-miVariable = 1 > 2
-print(miVariable)
-
-if miVariable:
-    print("El resultado fue verdadero")
-else:
-    print("El resultado fue Falso")
+resultado =input("Escribe un mensaje: ")
+print("Valor proporcionado: ",resultado)
+print("Fin del programa")
