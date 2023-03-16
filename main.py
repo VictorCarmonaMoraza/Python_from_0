@@ -1,9 +1,14 @@
-#No sabemos la cantidad de parametros que vamos a recibir
-def listarNombre(*nombres):
-    for nombre in nombres:
-        print((nombre))
+# Sumar argumentos variables
+
+resultado: int = 0
 
 
-#Es una tupla y recordar que las tuplas son inmutables por lo que no se pueden modifcar
+def sumarArgumentos(*valores) -> int:
+    resultado = 0
+    for valor in valores:
+        resultado += valor
+    return resultado
 
-listarNombre('juan','Pedro','Lucia','Jorge','Mario')
+
+# sumarArgumentos(1, 2, 3, 4, 5, 6, 7)
+print(sumarArgumentos(1, 2, 3, 4, 5, 6, 7))
