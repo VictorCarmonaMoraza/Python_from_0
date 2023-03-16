@@ -1,5 +1,6 @@
 
-titulo = input("Proporcionar el titulo del libro:")
-autor = input("Proporcionar el autor del libro:")
-print(titulo," fue escrito por ",autor)
+operandoA = 3
+operandoB = 2
+suma = operandoA + operandoB
+print(f'Resultado suma: {suma}')
 
