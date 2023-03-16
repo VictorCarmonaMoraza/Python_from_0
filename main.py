@@ -1,7 +1,7 @@
-#Funciones
-def mi_Funcion(nombre,apellido):
-    print('Nombre: '+nombre+ ' Apellido '+ apellido)
-    print(f'Nombre: {nombre}, Apellido: {apellido}')
+def sumar(a,b):
+    return a+b
 
 
-mi_Funcion('juan','Carmona')
+resultado = sumar(5, 3)
+print(resultado)
+print(f'Resultado sumar: {sumar(5,3)}')
