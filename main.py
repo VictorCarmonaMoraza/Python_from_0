@@ -1,10 +1,14 @@
 
 #Funciones recursivas
-def factorial(numero):
-    if numero == 1:
-        return 1
-    else:
-        return numero * factorial(numero-1)
+def numerosDescendentes(numero):
+    if numero >=1:
+        print(numero)
+        numerosDescendentes(numero -1)
+    elif numero == 0:
+        return
+    elif numero <0:
+        print('Valor incorrecto...')
 
-resultado = factorial(5)
-print(f'El factorial de 5 es {resultado}')
+resultado = numerosDescendentes(5)
+
+print(resultado)
