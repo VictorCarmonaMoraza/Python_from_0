@@ -1,14 +1,11 @@
 
-#Funciones recursivas
-def numerosDescendentes(numero):
-    if numero >=1:
-        print(numero)
-        numerosDescendentes(numero -1)
-    elif numero == 0:
-        return
-    elif numero <0:
-        print('Valor incorrecto...')
+pagoSinImpuestos = int(input("Ingrese pago sin impuestos:"))
+montoDelInpuesto = int(input("Monto del inpuestos:"))
 
-resultado = numerosDescendentes(5)
+def calcular_total_pago(PagoSinInpuestosParam, MontoDelImpuestoParam):
+    pagoTotal = pagoSinImpuestos + pagoSinImpuestos*(montoDelInpuesto/100)
+    return pagoTotal
 
-print(resultado)
+
+total = calcular_total_pago(pagoSinImpuestos,montoDelInpuesto)
+print('Pago con impuesto: ',total)
