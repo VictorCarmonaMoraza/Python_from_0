@@ -1,14 +1,10 @@
-# Sumar argumentos variables
 
-resultado: int = 0
-
-
-def  multiplicarArgumentos(*valores) -> int:
-    resultado = 1
-    for valor in valores:
-        resultado *= valor
-    return resultado
+# Argumentos variables en argumentos
+def listarTerminos(**terminos):
+    for llave, valor in terminos.items():
+        print(f'{llave} : {valor}')
 
 
+#listarTerminos(IDE='Interprete', PK='Primary key')
+listarTerminos(IDE='Interprete', PK='Primary key')
 
-print(multiplicarArgumentos(1, 2, 3, 4, 5, 6, 7))
