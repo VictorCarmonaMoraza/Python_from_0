@@ -1,16 +1,10 @@
 
+#Funciones recursivas
+def factorial(numero):
+    if numero == 1:
+        return 1
+    else:
+        return numero * factorial(numero-1)
 
-def desplegarNombres(nombres):
-    for nombre in nombres:
-        print(nombre)
-
-#Itera todos los elementos
-nombres = ['Juan','Carla','Guillermo']
-desplegarNombres(nombres)
-
-#Itera todas las letras del nombre cuando solo es una variable
-desplegarNombres('Carlos')
-#Tupla
-desplegarNombres((10, 11))
-#Lista
-desplegarNombres([10, 11])
+resultado = factorial(5)
+print(f'El factorial de 5 es {resultado}')
