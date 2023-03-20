@@ -11,9 +11,13 @@ class Persona:
 
 
 #Creamos un objeto de esta clase
+#Forma 1
 persona1 = Persona('Victor','Carmona', 45)
-persona1.mostrar_detalle()
+persona1.telefono = '55225415'
+print(persona1.telefono)
+Persona.mostrar_detalle(persona1)
 
+#Forma 2
 persona2 = Persona('jorge','Perez',2515)
 persona2.mostrar_detalle()
 
