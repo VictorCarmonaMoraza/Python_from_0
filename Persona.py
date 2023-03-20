@@ -3,26 +3,19 @@ class Persona:
   """
 
   """
-  def __init__(self, nom, apelli, age, *valores, **terminos):
-    self.nombre = nom
+  def __init__(self, nom, apelli, age):
+    self.__nombre = nom
     self.apellido = apelli
     self.edad = age
-    self.valores =valores
-    self.terminos = terminos
 
   #Metodo de nuestra clase
   def mostrar_detalle(self):
-    print(f'Persona : {self.nombre} {self.apellido} {self.edad} {self.valores} {self.terminos}')
+    print(f'Persona : {self.__nombre} {self.apellido} {self.edad}')
 
 
 #Creamos un objeto de esta clase
 #Forma 1
-persona1 = Persona('Victor','Carmona', 45, 2,3,5, m='manzana', p='pera')
+persona1 = Persona('Adris','Garcia', 45)
 persona1.mostrar_detalle()
 
-
-
-#Forma 2
-persona2 = Persona('jorge','Perez',2515)
-persona2.mostrar_detalle()
 
