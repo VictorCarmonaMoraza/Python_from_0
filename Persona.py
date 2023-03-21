@@ -45,19 +45,15 @@ class Persona:
   def mostrar_detalle(self):
     print(f'Persona : {self._nombre} {self._apellido} {self._edad}')
 
+#Comporbar que estamos dentro de nuestra clase principal
+if __name__ == '__main__':
+  persona1 = Persona('Adris','Garcia', 45)
+  persona1.nombre = 'Juan Carlos'
+  persona1.apellido = 'Lara'
+  persona1.edad = 30
+  persona1.mostrar_detalle()
 
-#Creamos un objeto de esta clase
-#Forma 1
-persona1 = Persona('Adris','Garcia', 45)
-persona1.nombre = 'Juan Carlos'
-#print(persona1.nombre)
-persona1.apellido = 'Lara'
-persona1.edad = 30
-persona1.mostrar_detalle()
-
-#LLamada al metodo setter
-#persona1.nombre = 'Juan Carlos'
-print(persona1.nombre)
+  print(__name__)
 
 
 
