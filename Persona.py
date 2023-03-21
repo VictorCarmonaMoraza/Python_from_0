@@ -13,10 +13,10 @@ class Persona:
     print('Llamando metodo get nombre')
     return self._nombre
 
-  @nombre.setter
-  def nombre(self, nombre):
-    print('LLamando metodo set nombre', nombre)
-    self._nombre = nombre
+  #@nombre.setter
+  #def nombre(self, nombre):
+  #  print('LLamando metodo set nombre', nombre)
+  #  self._nombre = nombre
 
   #Metodo de nuestra clase
   def mostrar_detalle(self):
